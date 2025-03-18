@@ -15,9 +15,9 @@ import org.springframework.stereotype.Service;
 public class EmployeeServiceImpl implements EmployeeService {
     
     List<Employee> list = new ArrayList<>(Arrays.asList(
-        new Employee(1, "Rijushree", "Software Engineer"),
-        new Employee(2, "Arun", "Tester"),
-        new Employee(3, "Nikil", "Manager")
+        new Employee(1, "Nitesh", "Tester"),
+        new Employee(2, "Naveen", "Software Engineer"),
+        new Employee(3, "Mahesh", "Team Lead")
     ));
     
     @Autowired

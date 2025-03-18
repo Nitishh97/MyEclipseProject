@@ -19,16 +19,19 @@ public class StudentServiceImpl implements StudentService {
     @PostConstruct
     public void initStudents() {
         if (studentRepository.count() == 0) { // Only add data if DB is empty
-            Student student1 = new Student("Alice Johnson", "alice@example.com", 21);
-            Student student2 = new Student("Bob Smith", "bob@example.com", 22);
-            Student student3 = new Student("Charlie Brown", "charlie@example.com", 23);
+            Student student1 = new Student("Alice brown", "brown@example.com", 21);
+            Student student2 = new Student("Bob hook", "hook@example.com", 22);
+            Student student3 = new Student("Charlie Rob", "Rob@example.com", 23);
             
             studentRepository.save(student1);
             studentRepository.save(student2);
             studentRepository.save(student3);
         }
     }
-      
+    
+    
+    
+    
     @Override
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
